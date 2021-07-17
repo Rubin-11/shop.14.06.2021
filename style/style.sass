@@ -1,0 +1,406 @@
+@import vars
+@import mixins
+html,
+body 
+    height: 100%
+.wrapper 
+    display: flex
+    flex-direction: column
+    height: 100%
+.content 
+    flex: 1 0 auto
+.footer 
+    flex: 0 0 auto
+*
+    padding: 0
+    margin: 0
+    text-decoration: none
+    font-family: 'Lato', sans-serif
+summary
+    display: block
+summary::-webkit-details-marker
+    display: none
+ul
+    list-style: none
+.center
+    padding-left: calc(50% - #{$pageWidth} / 2)
+    padding-right: calc(50% - #{$pageWidth} / 2)
+.header
+    height: 75px
+    background: #222
+    display: flex
+    position: relative
+    &__left
+        height: 75px
+        width: 50%
+        display: flex
+        align-items: center
+    &__left > ul
+        display: flex
+        align-items: center
+        gap: 41px
+    &__right
+        width: 50%
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        &__details-main
+            cursor: pointer
+            &__summary-icon:hover .header__right__svg-new
+                fill: $colorSelect
+            &[open] .header__right__svg-new
+                fill: $colorSelect
+            &__summary-menu
+                position: absolute
+                background: #fff
+                top: 75px
+                right: 0
+                height: 766px
+                width: 232px
+                box-shadow: 6px 4px 35px rgba(0,0,0,0.21)
+                z-index: 1
+                &__mobail
+                    display: none
+                &__close
+                    position: absolute
+                    top: 16px
+                    right: 16px
+                &__new
+                    &__main
+                        cursor: pointer
+                        padding-top: 24px
+                        padding-left: 33px
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 14px
+                        line-height: 17px
+                        color: $colorSelect
+                    &__ul li
+                        padding-top: 12px
+                    &__ul__a
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 14px
+                        line-height: 17px
+                        color: #6F6E6E
+                        padding-top: 12px
+                        padding-left: 54px
+                        &:hover
+                            color: $colorSelect
+            &__summary-menu h3
+                cursor: default
+                font-style: normal
+                font-weight: bold
+                font-size: 14px
+                line-height: 17px
+                color: #000
+                padding-top: 37px
+                padding-left: 34px
+    &__right > ul
+        display: flex
+        gap: 33px
+        align-items: center
+    &__nav:hover path
+        fill: $colorSelect
+.presentation
+    background: #F1E4E6
+    padding-left: calc(50% - 800px)
+    padding-right: calc(50% - 800px)
+    display: flex
+    &__left
+        width: 50%
+    &__left img
+        width: 100%
+        height: 100%
+    &__right
+        width: 50%
+        &__h3
+            display: inline-block
+            margin-top: 39%
+            margin-left: 6%
+            padding-left: 12px
+            border-left: 12px solid $colorSelect
+            &__top
+                font-style: normal
+                font-weight: 900
+                font-size: 48px
+                line-height: 58px
+                color: #222
+            &__bottom
+                font-style: normal
+                font-weight: bold
+                font-size: 32px
+                line-height: 38px
+                color: #222
+                &__on
+                    color: $colorSelect
+        &__h3:hover .presentation__right__h3__bottom__on::before
+            content: "FASHION"
+.productCategories
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-content: space-between
+    gap: 30px
+    margin-top: 65px
+    &__container
+        display: flex
+        gap: 30px
+    &__for
+        position: relative
+        &__img
+            width: 100%
+            height: 100%
+        &__h3
+            position: absolute
+            top: 0px
+            left: 0px
+            width: 100%
+            height: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            &__top
+                color: #ffffff
+                text-align: center
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 19px
+            &__bottom
+                color: $colorSelect
+                text-align: center
+                font-style: normal
+                font-weight: bold
+                font-size: 24px
+                line-height: 29px
+    &__accesories
+        position: relative
+.topProduct
+    margin-top: 96px
+    &__text
+        +flexCenter
+        margin-bottom: 48px
+        &__h3
+            font-style: normal
+            font-weight: normal
+            font-size: 30px
+            line-height: 36px
+            color: #222222
+        &__p
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 17px
+            color: #9F9F9F
+    &__price
+        display: grid
+        grid-template-columns: repeat(auto-fill, 360px)
+        justify-content: center
+        gap: 30px
+        &__block
+            background-color: #F8F8F8
+            min-height: 581.99px
+            transition: 0.3s
+            &__img
+                position: relative
+                &__button
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    left: 0
+                    top: -188px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    visibility: hidden
+                    margin-bottom: 95px
+                    &__a
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 14px
+                        line-height: 17px
+                        color: #FFFFFF
+                        padding: 12px 20px 8px 14px
+                        border: 1px solid #fff
+                        display: flex
+                        align-items: center
+                    &__svg
+                        margin-right: 8px
+                    &__a:hover
+                        background: #fff
+                        color: #000
+                    &__a:hover .topProduct__price__block__img__button__svg path
+                        fill: #000
+            &__h3
+                font-style: normal
+                font-weight: normal
+                font-size: 13px
+                line-height: 16px
+                color: #000000
+                margin: 25.35px auto auto 18px
+            &__text
+                font-style: normal
+                font-weight: 300
+                font-size: 14px
+                line-height: 17px
+                color: #5d5d5d
+                margin: 16.65px 22.8px auto 16.46px
+            &__priceText
+                font-style: normal
+                font-weight: normal
+                font-size: 16px
+                line-height: 19px
+                color: $colorSelect
+                margin: 18px auto auto 18.41px
+        &__block:hover
+            transform: scale(1.03)
+        &__block:hover .topProduct__price__block__img__button
+            visibility: visible
+        &__block:hover img
+            filter: brightness(50%)
+    &__button
+        display: flex
+        justify-content: center
+        &__bt
+            padding: 15px 39px 15px 39px
+            color: $colorSelect
+            border: 1px solid $colorSelect
+            margin-top: 48px
+            background: #fff
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 19px
+        &__bt:hover
+            color: #fff
+            background: $colorSelect
+.specialConditions
+    min-height: 341px
+    background-color: #222224
+    display: flex
+    justify-content: space-between
+    &__blok
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        width: 360px
+        &__svg
+        &__h3
+            color: #FFFFFF
+            font-style: normal
+            font-weight: normal
+            font-size: 19.96px
+            line-height: 24px
+            padding-top: 28px
+            text-align: center
+        &__p
+            color: #fbfbfb
+            font-style: normal
+            font-weight: 300
+            font-size: 13.972px
+            line-height: 17px
+            padding-top: 16px
+            text-align: center
+.footer
+    margin-top: 95px
+    &__top
+        background-image: url("../img/footer/background.jpg")
+        background-repeat: no-repeat
+        background-position: center
+        min-height: 445px
+        display: flex
+        justify-content: space-between
+        &__left
+            width: 359px
+            min-height: 255px
+            text-align: center
+            margin-top: 97px
+            &__p
+                margin-top: 30px
+                font-style: normal
+                font-weight: normal
+                font-size: 20px
+                line-height: 24px
+                text-align: center
+                color: #222224
+        &__right
+            text-align: center
+            min-width: 557px
+            margin-top: 150px
+            &__h3
+                font-style: normal
+                font-weight: bold
+                font-size: 24px
+                line-height: 167.2%
+                color: #222224
+            &__p
+                font-style: normal
+                font-weight: normal
+                font-size: 18px
+                line-height: 167.2%
+                color: #222224
+            &__form
+                margin-top: 32px
+                display: flex
+                justify-content: center
+                &__email
+                    padding: 7px 64px 6px 22px
+                    background: #E1E1E1
+                    border: none
+                    border-radius: 50px 0 0 50px
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 14px
+                    line-height: 17px
+                    color: #222224
+                    opacity: 0.67
+                    height: 36px
+                    width: 170px
+                    outline: none
+                    opacity: 1
+                &__submit
+                    padding: 7px 7px 7px 8px
+                    background: $colorSelect
+                    border: none
+                    border-radius: 0 50px 50px 0
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 14px
+                    line-height: 17px
+                    display: flex
+                    align-items: center
+                    text-align: center
+                    color: #FFFFFF
+                    width: 85px
+                    outline: none
+                &__submit:hover
+                    background: $colorShade
+    &__bottom
+        min-height: 79px
+        background: #222224
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &__left h4
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 19px
+            color: #FBFBFB
+        &__right
+            &__ul
+                display: flex
+                gap: 8px
+            &__a:hover .footer__copy__right__social-networks__svg .path1
+                fill: $colorSelect
+            &__a:hover .footer__copy__right__social-networks__svg .path2
+                fill: #fff
+@import catalog
+@import product
+@import registration
+@import cart
+@import m768
+@import m375

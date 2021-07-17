@@ -1,0 +1,153 @@
+.nav
+    &__top
+        display: flex
+        justify-content: space-between
+        align-items: center
+        min-height: 148px
+        background-color: #F8F3F4
+        &__h3
+            font-style: normal
+            font-weight: normal
+            font-size: 24px
+            line-height: 29px
+            color: $colorSelect
+        &__ul
+            display: flex
+            gap: 6px
+            &__li
+                &__a
+                    font-style: normal
+                    font-weight: 300
+                    font-size: 14px
+                    line-height: 17px
+                    color: #636363
+                &__a-hover:hover
+                    color: $colorSelect
+            &__active
+                font-style: normal
+                font-weight: bold
+                font-size: 14px
+                line-height: 17px
+                color: $colorSelect
+    &__botton
+        height: 132px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &__left
+            position: relative
+            height: 48px
+            &__details
+                background-color: #fff
+                padding: 16px 16px 16px
+                width: 79px
+                position: absolute
+                z-index: 1
+                cursor: pointer
+                &__summary
+                    font-style: normal
+                    font-weight: 600
+                    font-size: 14px
+                    line-height: 17px
+                    color: #000000
+                    display: flex
+                    align-items: center
+                    &__svg
+                        margin-left: 12px
+                &[open]
+                    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21%)
+                    width: 360px
+                &[open] .nav__botton__left__details__summary__svg-fill
+                    fill: $colorSelect
+                &[open] .nav__botton__left__details__summary
+                    color: $colorSelect
+                &__sort
+                    margin-top: 16px
+                    &[open] .nav__botton__left__details__sort__number
+                        color: $colorSelect
+                    &__number
+                        border-left: 5px solid $colorSelect
+                        display: block
+                        height: 37px
+                        border-bottom: 1px solid #EBEBEB
+                        padding-left: 11px
+                        line-height: 37px
+                        &__ul
+                            list-style-type: none
+                            padding-left: 16px
+                            margin-top: 24px
+                        &__a
+                            font-size: 14px
+                            line-height: 17px
+                            color: #6F6E6E
+                            margin-bottom: 11px
+                            display: block
+                            &:hover
+                                color: $colorSelect
+        &__right
+            margin-right: 35%
+            &__ul
+                display: flex
+                gap: 28px
+                &__li
+                    position: relative
+                    height: 21px
+                    &:hover .nav__botton__right__ul__li__ul
+                        display: inline-block
+                    &__text
+                        display: flex
+                        cursor: pointer
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 16px
+                        line-height: 17px
+                        color: #6F6E6E
+                        &__markers
+                            margin-left: 12px
+                    &__ul
+                        position: absolute
+                        display: none
+                        min-width: 79px
+                        background: #fff
+                        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+                        border: 1px solid #EBEBEB
+                        z-index: 1
+                        left: -10px
+                        top: 22px
+                        &__li
+                            font-size: 14px
+                            padding: 7px 0 7px 9px
+                            margin: 0px
+                            &__input
+                                margin-right: 10px
+.slider
+    display: flex
+    justify-content: center
+    &__ul
+        display: flex
+        justify-content: center
+        align-items: center
+        gap: 15px
+        width: 284px
+        height: 44px
+        margin-top: 48px
+        border: #EBEBEB solid 1px
+        border-radius: 2px
+    &__li
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #C4C4C4
+    &__li:hover
+        color: $colorSelect
+    &__l
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #C4C4C4
+    &__li-lt
+        color: #000000
+    &__li-select
+        color: #EF5B70

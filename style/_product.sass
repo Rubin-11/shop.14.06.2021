@@ -1,0 +1,156 @@
+.product__slider
+    height: 777px
+    background: #F7F7F7
+    text-align: center
+    position: relative
+    z-index: 0
+    &__left
+        width: 47px
+        height: 47px
+        background: #D8D8D8
+        position: absolute
+        top: 365px
+        left: 0
+        display: flex
+        justify-content: center
+        align-items: center
+    &__right
+        width: 47px
+        height: 47px
+        background: #D8D8D8
+        position: absolute
+        top: 365px
+        right: 0
+        display: flex
+        justify-content: center
+        align-items: center
+.product__price
+    height: 601px
+    margin-top: -68px
+    position: relative
+    z-index: 1
+    margin-bottom: 128px
+    &__box
+        width: 100%
+        height: 100%
+        outline: 1px solid #EAEAEA
+        position: relative
+        z-index: 2
+        background: #fff
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__h3__text
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-top: 64px
+        &__h3
+            font-style: normal
+            font-weight: 300
+            font-size: 14px
+            line-height: 17px
+            color: $colorSelect
+            text-align: center
+            &__border
+                width: 63px
+                height: 3px
+                background: $colorSelect
+                margin-top: 12px
+        &__h1
+            font-style: normal
+            font-weight: 300
+            font-size: 18px
+            line-height: 22px
+            color: #4d4d4d
+            margin-top: 12px
+        &__p
+            font-style: normal
+            font-weight: 300
+            font-size: 14px
+            line-height: 17px
+            text-align: center
+            color: #5E5E5E
+            max-width: 576px
+            padding: 48px 0 32px
+        &__price
+            font-style: normal
+            font-weight: 300
+            font-size: 24px
+            line-height: 29px
+            color: #EF5B70
+        &__line
+            width: 642px
+            border-top: 1px solid #EAEAEA
+            margin-top: 64px
+        &__nav
+            margin-top: 64px
+            
+            &__ul
+                display: flex
+                justify-content: space-between
+                gap: 22px
+            &__li
+                position: relative
+                &:hover .product__price__box__nav__li__ul__choose-collor
+                    display: inline
+                &:hover .product__price__box__nav__li__ul__choose-size
+                    display: inline
+                &:hover .product__price__box__nav__li__ul__quantity
+                    display: inline
+                &__text
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 14px
+                    line-height: 17px
+                    color: #6f6e6e
+                    display: flex
+                    cursor: default
+                &__text img
+                    margin-left: 10px
+                &__ul
+                    display: none
+                    position: absolute
+                    background: #fff
+                    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+                    padding: 12px
+                    &__choose-collor
+                        min-width: 114px
+                    &__choose-size
+                        min-width: 94px
+                    &__quantity
+                        min-width: 69px
+                    &__li
+                        margin-bottom: 15px
+                        & label
+                            font-style: normal
+                            font-weight: normal
+                            font-size: 14px
+                            line-height: 17px
+                            color: #6f6e6e
+                            display: flex
+        &__button
+            margin-top: 48px
+            width: 212px
+            height: 48px
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 19px
+            color: #f26376
+            display: flex
+            align-items: center
+            border: 1px solid #f26376
+            outline: none
+            background: #fff
+            &__svg
+                fill: #f26376
+                margin-left: 24px
+                margin-right: 23px
+        &__button:hover
+            color: #fff
+            background-color: #F26376
+        &__button:hover svg path
+            fill: #FFF
+.footer__product
+    margin-top: 128px
