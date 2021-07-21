@@ -24,15 +24,22 @@
     .presentation__right
         width: 100%
         min-height: 363px
+        display: flex
+        &__h3
+            margin: auto
     .productCategories
         &__container
-            flex-wrap: wrap
+            width: 100%
+            flex-direction: column
+            align-items: center
             justify-content: center
         &__accesories
             height: 111px
-        &__for__img
-            object-position: center
-            object-fit: cover
+        &__for
+            width: 342px
+            &__img
+                object-position: center
+                object-fit: cover
     .footer__top
         background-position-y: inherit
     .footer__top__left
@@ -62,16 +69,18 @@
             margin-top: 43px
     // catalog
     .nav__top
-        flex-wrap: wrap
+        flex-direction: column
         justify-content: center
+        gap: 32px
     .nav__botton__left__details
         padding: 12px 0 16px
         width: 75px
+        z-index: 0
         &__summary__svg
             margin-left: 0
             width: 38px
             height: 25px
-    .nav__botton__left__details__summary p
+    .nav__botton__left__details__summary span
         display: none
     .nav__botton__right__ul__li__text
         font-size: 12px
