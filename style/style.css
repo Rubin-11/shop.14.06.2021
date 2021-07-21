@@ -1604,7 +1604,7 @@ ul {
     padding-right: calc(50% - 368px);
   }
   .header__right__details-main__summary-menu {
-    z-index: 1;
+    z-index: 2;
     padding-bottom: 44px;
     height: auto;
   }
@@ -1780,7 +1780,7 @@ ul {
     height: 111px;
   }
   .productCategories__for {
-    width: 342px;
+    width: 100%;
   }
   .productCategories__for__img {
     -o-object-position: center;
@@ -1844,7 +1844,7 @@ ul {
   .nav__botton__left__details {
     padding: 12px 0 16px;
     width: 75px;
-    z-index: 0;
+    z-index: 1;
   }
   .nav__botton__left__details__summary__svg {
     margin-left: 0;
