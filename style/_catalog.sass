@@ -21,8 +21,10 @@
                     font-size: 14px
                     line-height: 17px
                     color: #636363
-                &__a-hover:hover
-                    color: $colorSelect
+                &__a-hover
+                    transition: all 0.3s
+                    &:hover
+                        color: $colorSelect
             &__active
                 font-style: normal
                 font-weight: bold
@@ -139,6 +141,7 @@
         font-size: 16px
         line-height: 19px
         color: #C4C4C4
+        translition: all 0.3s
     &__li:hover
         color: $colorSelect
     &__l

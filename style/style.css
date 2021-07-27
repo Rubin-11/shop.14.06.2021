@@ -71,6 +71,11 @@ ul {
           align-items: center;
 }
 
+.header__left__svg {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 .header__left > ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -92,6 +97,16 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header__right__svg {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.header__right__svg-new {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .header__right__details-main {
@@ -151,6 +166,8 @@ ul {
   color: #6F6E6E;
   padding-top: 12px;
   padding-left: 54px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .header__right__details-main__summary-menu__new__ul__a:hover {
@@ -402,6 +419,8 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .topProduct__price__block__img__button__svg {
@@ -477,6 +496,8 @@ ul {
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .topProduct__button__bt:hover {
@@ -599,7 +620,7 @@ ul {
 }
 
 .footer__top__right__form__email {
-  padding: 7px 64px 6px 22px;
+  padding: 7px 22px 7px 22px;
   background: #E1E1E1;
   border: none;
   border-radius: 50px 0 0 50px;
@@ -610,9 +631,11 @@ ul {
   color: #222224;
   opacity: 0.67;
   height: 36px;
-  width: 170px;
+  width: 212px;
   outline: none;
   opacity: 1;
+  padding-left: 22px;
+  padding-right: 22px;
 }
 
 .footer__top__right__form__submit {
@@ -634,6 +657,8 @@ ul {
   color: #FFFFFF;
   width: 85px;
   outline: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .footer__top__right__form__submit:hover {
@@ -677,6 +702,11 @@ ul {
   fill: #fff;
 }
 
+.footer__copy__right__social-networks__svg .path1 {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 .nav__top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -712,6 +742,11 @@ ul {
   font-size: 14px;
   line-height: 17px;
   color: #636363;
+}
+
+.nav__top__ul__li__a-hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .nav__top__ul__li__a-hover:hover {
@@ -912,6 +947,7 @@ ul {
   font-size: 16px;
   line-height: 19px;
   color: #C4C4C4;
+  translition: all 0.3s;
 }
 
 .slider__li:hover {
@@ -1169,6 +1205,8 @@ ul {
   border: 1px solid #f26376;
   outline: none;
   background: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .product__price__box__button__svg {
@@ -1236,6 +1274,7 @@ ul {
   height: 45px;
   margin-top: 20px;
   padding-left: 17px;
+  padding-right: 17px;
   border: 1px solid #A4A4A4;
 }
 
@@ -1294,6 +1333,8 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .registration__form__button__svg {
@@ -1480,6 +1521,8 @@ ul {
   font-size: 14px;
   line-height: 17px;
   color: #000000;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .cart__products__sorting__button:hover {
@@ -1511,6 +1554,7 @@ ul {
   margin-bottom: 20px;
   height: 45px;
   padding-left: 18px;
+  padding-right: 18px;
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
@@ -1531,6 +1575,7 @@ ul {
   width: 102px;
   height: 35px;
   padding-left: 15px;
+  padding-right: 15px;
   margin-top: 23px;
   border: 1px solid #A4A4A4;
 }
@@ -1592,6 +1637,8 @@ ul {
   border: none;
   color: #fff;
   margin-top: 17px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .cart__placing-an-order__box2__button:hover {

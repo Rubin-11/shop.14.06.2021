@@ -26,6 +26,7 @@
             height: 45px
             margin-top: 20px
             padding-left: 17px
+            padding-right: 17px
             border: 1px solid #A4A4A4
         &__input::-webkit-input-placeholder
             color: #B1B1B1
@@ -62,10 +63,11 @@
             display: flex
             justify-content: flex-end
             align-items: center
+            transition: all 0.3s
             &__svg
                 margin: 0 29px 0 20px
-        &__button:hover
-            background: $colorShade
+            &:hover
+                background: $colorShade
     &__loyalty
         max-width: 652px
         &__h3

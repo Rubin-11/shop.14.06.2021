@@ -35,6 +35,8 @@ ul
         width: 50%
         display: flex
         align-items: center
+        &__svg
+            transition: all 0.3s
     &__left > ul
         display: flex
         align-items: center
@@ -44,6 +46,10 @@ ul
         display: flex
         justify-content: flex-end
         align-items: center
+        &__svg
+            transition: all 0.3s
+        &__svg-new
+            transition: all 0.3s
         &__details-main
             cursor: pointer
             &__summary-icon:hover .header__right__svg-new
@@ -85,6 +91,7 @@ ul
                         color: #6F6E6E
                         padding-top: 12px
                         padding-left: 54px
+                        transition: all 0.3s
                         &:hover
                             color: $colorSelect
             &__summary-menu h3
@@ -100,8 +107,9 @@ ul
         display: flex
         gap: 33px
         align-items: center
-    &__nav:hover path
-        fill: $colorSelect
+    &__nav
+        &:hover path
+            fill: $colorSelect
 .presentation
     background: #F1E4E6
     padding-left: calc(50% - 800px)
@@ -226,6 +234,7 @@ ul
                         border: 1px solid #fff
                         display: flex
                         align-items: center
+                        transition: all 0.3s
                     &__svg
                         margin-right: 8px
                     &__a:hover
@@ -273,6 +282,7 @@ ul
             font-weight: normal
             font-size: 16px
             line-height: 19px
+            transition: all 0.3s
         &__bt:hover
             color: #fff
             background: $colorSelect
@@ -347,7 +357,7 @@ ul
                 display: flex
                 justify-content: center
                 &__email
-                    padding: 7px 64px 6px 22px
+                    padding: 7px 22px 7px 22px
                     background: #E1E1E1
                     border: none
                     border-radius: 50px 0 0 50px
@@ -358,9 +368,11 @@ ul
                     color: #222224
                     opacity: 0.67
                     height: 36px
-                    width: 170px
+                    width: 212px
                     outline: none
                     opacity: 1
+                    padding-left: 22px
+                    padding-right: 22px
                 &__submit
                     padding: 7px 7px 7px 8px
                     background: $colorSelect
@@ -376,6 +388,7 @@ ul
                     color: #FFFFFF
                     width: 85px
                     outline: none
+                    transition: all 0.3s
                 &__submit:hover
                     background: $colorShade
     &__bottom
@@ -398,6 +411,8 @@ ul
                 fill: $colorSelect
             &__a:hover .footer__copy__right__social-networks__svg .path2
                 fill: #fff
+    &__copy__right__social-networks__svg .path1
+        transition: all 0.3s
 @import catalog
 @import product
 @import registration
